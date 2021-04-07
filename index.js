@@ -1,11 +1,13 @@
 console.log("Hola mundo");
 const parrafo = document.getElementById('texto-entrada');
-console.log(parrafo)
+const div_resultados = document.getElementById('resultados');
+
+console.log(div_resultados);
+
 const palabras = parrafo.innerText.split(' ');
+console.log(parrafo)
 
-const resultados = {
-
-};
+const resultados = {};
 
 palabras.forEach(palabra => {
   // console.log(palabra);
@@ -16,5 +18,9 @@ palabras.forEach(palabra => {
     resultados[palabra] = 1;
   }
 });
+
+// Object.keys(resultados).forEach(resultado => {
+//   document
+// })
 
 console.log(resultados)
